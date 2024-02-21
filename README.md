@@ -9,6 +9,5 @@
 Software Distribution Reset
 
 ```
-$script = Invoke-WebRequest -Uri https://raw.githubusercontent.com/cquick00/useful-powershell-scripts/main/scripts/software-distribution-reset.ps1
-Invoke-Expression $($script.Content)
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/cquick00/useful-powershell-scripts/main/scripts/software-distribution-reset.ps1 | Invoke-Expression
 ```
