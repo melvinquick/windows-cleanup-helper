@@ -9,5 +9,5 @@
 Software Distribution Reset
 
 ```
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/cquick00/useful-powershell-scripts/main/scripts/software-distribution-reset.ps1 | Invoke-Expression
+Invoke-WebRequest -Uri https://knightkairos.com/software-distribution-reset | Invoke-Expression
 ```
