@@ -9,5 +9,5 @@
 Software Distribution Reset
 
 ```
-Invoke-WebRequest -Uri https://knightkairos.com/software-distribution-reset | Invoke-Expression
+IWR https://knightkairos.com/software-distribution-reset | IEX
 ```
