@@ -8,14 +8,14 @@ A place for me to store PowerShell Scripts I find useful as I create them.
 
 **Scripts need to be run from a PowerShell 5+ Admin Session**
 
-Software Distribution Reset
-
-```
-IWR https://knightkairos.com/software-distribution-reset | IEX
-```
-
 Read-Only Friday
 
 ```
 IWR https://knightkairos.com/read-only-friday | IEX
+```
+
+Software Distribution Reset
+
+```
+IWR https://knightkairos.com/software-distribution-reset | IEX
 ```
