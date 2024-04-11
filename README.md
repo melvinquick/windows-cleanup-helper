@@ -11,11 +11,11 @@ A place for me to store PowerShell Scripts I find useful as I create them.
 Read-Only Friday
 
 ```
-IWR https://knightkairos.com/read-only-friday | IEX
+IWR https://rof.melvinquick.com/ | IEX
 ```
 
 Software Distribution Reset
 
 ```
-IWR https://knightkairos.com/software-distribution-reset | IEX
+IWR https://sds.melvinquick.com/| IEX
 ```
