@@ -17,5 +17,5 @@ IWR rof.melvinquick.com | IEX
 Software Distribution Reset
 
 ```
-IWR sds.melvinquick.com | IEX
+IWR sdr.melvinquick.com | IEX
 ```
