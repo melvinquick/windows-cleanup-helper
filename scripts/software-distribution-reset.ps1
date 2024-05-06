@@ -5,19 +5,19 @@ $path_size_mb_original = Get-ChildItem -Path $path -Recurse | Measure-Object -Pr
 $path_size_gb_original = Get-ChildItem -Path $path -Recurse | Measure-Object -Property Length -Sum | Select-Object @{n = "Size"; e = { [math]::Round(($_.Sum / 1073741824), 2) } } | Select-Object -ExpandProperty Size
 
 Write-Host("Stopping $service1...")
-Stop-Service $service1
+Stop-Service $service1 -WarningAction SilentlyContinue
 
 Write-Host("Stopping $service2...")
-Stop-Service $service2
+Stop-Service $service2 -WarningAction SilentlyContinue
 
 Write-Host("Clearing files/folders found in $path...")
 Get-ChildItem -Path $path | Remove-Item -Recurse -Force
 
 Write-Host("Starting $service1...")
-Start-Service $service1
+Start-Service $service1 -WarningAction SilentlyContinue
 
 Write-Host("Starting $service2...")
-Start-Service $service2
+Start-Service $service2 -WarningAction SilentlyContinue
 
 Write-Host("Calculating space saved...")
 if ($path_size_mb_original -lt 1000) {
