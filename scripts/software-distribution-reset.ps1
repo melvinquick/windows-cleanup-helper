@@ -58,6 +58,5 @@ elseif ($path_size_pb_original -lt 1024){
     Write-Host("You saved $path_size_pb_difference PB of space!")
 }
 else {
-    Write-Host("Unable to calculate path size. This script will now exit.")
-    exit
+    Write-Host("Unable to calculate path size.")
 }
