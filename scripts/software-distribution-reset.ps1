@@ -1,3 +1,6 @@
+Write-Host("SOFTWARE DISTRIBUTION RESET")
+Write-Host("---------------------------")
+
 $service1 = 'wuauserv'
 $service2 = 'bits'
 $path = 'C:\Windows\SoftwareDistribution'
