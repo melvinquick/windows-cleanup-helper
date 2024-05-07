@@ -1,4 +1,4 @@
-Write-Host("WINDOWS CLEANUP HELPER")
+Write-Host("`nWINDOWS CLEANUP HELPER") -ForegroundColor Green
 Write-Host("----------------------")
 
 # C:\WIndows\SoftwareDistribution folder reset
