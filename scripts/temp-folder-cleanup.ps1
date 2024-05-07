@@ -1,4 +1,4 @@
-Write-Host("TEMP FOLDER CLEANUP")
+Write-Host("`nTEMP FOLDER CLEANUP") -ForegroundColor Green
 Write-Host("-------------------")
 
 $path = 'C:\Windows\Temp'
@@ -10,7 +10,7 @@ $path_size_tb_original = Get-ChildItem -Path $path -Recurse | Measure-Object -Pr
 $path_size_pb_original = Get-ChildItem -Path $path -Recurse | Measure-Object -Property Length -Sum | Select-Object @{n = "Size"; e = { [math]::Round(($_.Sum / 1125899906842624), 2) } } | Select-Object -ExpandProperty Size
 
 Write-Host("Clearing files/folders found in $path...")
-Get-ChildItem -Path $path | Remove-Item -Recurse -Force
+Get-ChildItem -Path $path | Remove-Item -Recurse -Force -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
 
 Write-Host("Calculating space saved...")
 if ($path_size_b_original -lt 1024) {
