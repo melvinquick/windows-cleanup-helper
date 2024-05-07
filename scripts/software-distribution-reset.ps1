@@ -1,4 +1,4 @@
-Write-Host("SOFTWARE DISTRIBUTION RESET")
+Write-Host("`nSOFTWARE DISTRIBUTION RESET") -ForegroundColor Green
 Write-Host("---------------------------")
 
 $service1 = 'wuauserv'
