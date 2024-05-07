@@ -14,6 +14,12 @@ Read-Only Friday
 IWR rof.melvinquick.com | IEX
 ```
 
+Screenshot Folder Cleanup
+
+```
+IWR sfc.melvinquick.com | IEX
+```
+
 Software Distribution Reset
 
 ```
