@@ -1,6 +1,6 @@
-Write-Host("--------------------------")
-Write-Host("`n| WINDOWS CLEANUP HELPER |") -ForegroundColor Green
-Write-Host("--------------------------")
+Write-Host("`n--------------------------") -ForegroundColor Green
+Write-Host("| WINDOWS CLEANUP HELPER |") -ForegroundColor Green
+Write-Host("--------------------------") -ForegroundColor Green
 
 # C:\WIndows\SoftwareDistribution folder reset
 Invoke-WebRequest sdr.melvinquick.com | Invoke-Expression
