@@ -8,6 +8,12 @@ A place for me to store PowerShell Scripts I find useful as I create them.
 
 **Scripts need to be run from a PowerShell 5+ Admin Session**
 
+C Drive Cleanup
+
+```
+IWR cdc.melvinquick.com | IEX
+```
+
 Read-Only Friday
 
 ```
