@@ -19,3 +19,15 @@ Software Distribution Reset
 ```
 IWR sdr.melvinquick.com | IEX
 ```
+
+Temp Folder Cleanup
+
+```
+IWR tfc.melvinquick.com | IEX
+```
+
+Windows Cleanup Helper
+
+```
+IWR wch.melvinquick.com | IEX
+```
