@@ -1,5 +1,5 @@
-Write-Host("`nSCREENSHOT FOLDER CLEANUP") -ForegroundColor Green
-Write-Host("-------------------------")
+Write-Host("`nDOWNLOADS FOLDER CLEANUP") -ForegroundColor Green
+Write-Host("------------------------")
 
 $path = $HOME + '\Downloads'
 $path_size_b_original = Get-ChildItem -Path $path -Recurse | Measure-Object -Property Length -Sum | Select-Object @{n = "Size"; e = { [math]::Round(($_.Sum / 1), 2) } } | Select-Object -ExpandProperty Size
