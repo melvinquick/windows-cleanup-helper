@@ -34,4 +34,4 @@ if ($c_drive_cleanup_enabled.ToLower() -eq "y") {
     Invoke-WebRequest cdc.melvinquick.com | Invoke-Expression
 }
 
-Write-Host("`nScript has finished cleaning. View the above output to see how much space you saved in each section!")
+Write-Host("`nScript has finished cleaning. View the above output to see how much space you saved in each section!") -ForegroundColor Green
