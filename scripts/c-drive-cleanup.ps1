@@ -1,4 +1,4 @@
-Write-Host("`nC Drive Cleanup") -ForegroundColor Green
+Write-Host("`nC DRIVE CLEANUP") -ForegroundColor Green
 Write-Host("---------------")
 
 $path = 'C'
