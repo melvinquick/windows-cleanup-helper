@@ -13,7 +13,9 @@ A place for me to store PowerShell Scripts I find useful as I create them.
 
 <div>
 
-<br>Read-Only Friday
+<br>
+
+Read-Only Friday
 
 ```
 IWR rof.melvinquick.com | IEX
@@ -23,11 +25,13 @@ IWR rof.melvinquick.com | IEX
 </details>
 
 <details>
-    <summary>Windows Cleanup Scripts (Running Windows Cleanup Helper get you access to all the sub-scripts in this section)</summary>
+    <summary>Windows Cleanup Scripts (Running Windows Cleanup Helper gets you access to all the sub-scripts in this section)</summary>
 
 <div>
 
-<br>C Drive Cleanup
+<br>
+
+C Drive Cleanup
 
 ```
 IWR cdc.melvinquick.com | IEX
