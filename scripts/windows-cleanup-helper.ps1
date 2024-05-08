@@ -2,7 +2,7 @@ Write-Host("`n--------------------------") -ForegroundColor Green
 Write-Host("| WINDOWS CLEANUP HELPER |") -ForegroundColor Green
 Write-Host("--------------------------") -ForegroundColor Green
 
-Write-Host("`nPlease choose (y/n) to the following cleanup options!")
+Write-Host("`nPlease choose (y/n) to the following cleanup options!") -ForegroundColor Cyan
 $downloads_folder_cleanup_enabled = Read-Host("Downloads Folder Cleanup")
 $screenshot_folder_cleanup_enabled = Read-Host("Screenshot Folder Cleanup")
 $software_distribution_folder_reset_enabled = Read-Host("SoftwareDistribution Folder Reset")
@@ -34,4 +34,4 @@ if ($c_drive_cleanup_enabled.ToLower() -eq "y") {
     Invoke-WebRequest cdc.melvinquick.com | Invoke-Expression
 }
 
-Write-Host("`nScript has finished cleaning. View the above output to see how much space you saved in each section!") -ForegroundColor Green
+Write-Host("`nScript has finished cleaning. View the above output to see how much space you saved in each section!") -ForegroundColor Cyan
