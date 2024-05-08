@@ -8,16 +8,29 @@ A place for me to store PowerShell Scripts I find useful as I create them.
 
 **Scripts need to be run from a PowerShell 5+ Admin Session**
 
-C Drive Cleanup
+<details>
+    <summary>Just For Fun</summary>
 
-```
-IWR cdc.melvinquick.com | IEX
-```
+<div>
 
-Read-Only Friday
+<br>Read-Only Friday
 
 ```
 IWR rof.melvinquick.com | IEX
+```
+
+</div>
+</details>
+
+<details>
+    <summary>Windows Cleanup Scripts (Running Windows Cleanup Helper get you access to all the sub-scripts in this section)</summary>
+
+<div>
+
+<br>C Drive Cleanup
+
+```
+IWR cdc.melvinquick.com | IEX
 ```
 
 Screenshot Folder Cleanup
@@ -43,3 +56,6 @@ Windows Cleanup Helper
 ```
 IWR wch.melvinquick.com | IEX
 ```
+
+</div>
+</details>
