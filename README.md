@@ -37,6 +37,12 @@ C Drive Cleanup
 IWR cdc.melvinquick.com | IEX
 ```
 
+Downloads Folder Cleanup
+
+```
+IWR dfc.melvinquick.com | IEX
+```
+
 Screenshot Folder Cleanup
 
 ```
