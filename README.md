@@ -61,6 +61,12 @@ Temp Folder Cleanup
 IWR tfc.melvinquick.com | IEX
 ```
 
+User Temp Folder Cleanup
+
+```
+IWR utfc.melvinquick.com | IEX
+```
+
 Windows Cleanup Helper
 
 ```
