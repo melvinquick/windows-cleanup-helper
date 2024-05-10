@@ -7,6 +7,7 @@ $downloads_folder_cleanup_enabled = Read-Host("Downloads Folder Cleanup")
 $screenshot_folder_cleanup_enabled = Read-Host("Screenshot Folder Cleanup")
 $software_distribution_folder_reset_enabled = Read-Host("SoftwareDistribution Folder Reset")
 $temp_folder_cleanup_enabled = Read-Host("Temp Folder Cleanup")
+$user_temp_folder_cleanup_enabled = Read-Host("User Temp Folder Cleanup")
 $c_drive_cleanup_enabled = Read-Host("C Drive Cleanup")
 
 if ($downloads_folder_cleanup_enabled.ToLower() -eq "y") {
@@ -27,6 +28,11 @@ if ($software_distribution_folder_reset_enabled.ToLower() -eq "y") {
 if ($temp_folder_cleanup_enabled.ToLower() -eq "y") {
     # C:\Windows\Temp folder cleanup
     Invoke-WebRequest tfc.melvinquick.com | Invoke-Expression
+}
+
+if ($user_temp_folder_cleanup_enabled.ToLower() -eq "y") {
+    # $HOME\AppData\Local\Temp folder cleanup
+    Invoke-WebRequest utfc.melvinquick.com | Invoke-Expression
 }
 
 if ($c_drive_cleanup_enabled.ToLower() -eq "y") {
