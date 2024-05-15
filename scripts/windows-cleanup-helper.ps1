@@ -9,6 +9,7 @@ $software_distribution_folder_reset_enabled = Read-Host("SoftwareDistribution Fo
 $temp_folder_cleanup_enabled = Read-Host("Temp Folder Cleanup")
 $user_temp_folder_cleanup_enabled = Read-Host("User Temp Folder Cleanup")
 $c_drive_cleanup_enabled = Read-Host("C Drive Cleanup")
+$recycle_bin_cleanup_enabled = Read-Host("Recycle Bin Cleanup")
 
 if ($downloads_folder_cleanup_enabled.ToLower() -eq "y") {
     # $HOME\Pictures\Screenshot folder cleanup
@@ -38,6 +39,11 @@ if ($user_temp_folder_cleanup_enabled.ToLower() -eq "y") {
 if ($c_drive_cleanup_enabled.ToLower() -eq "y") {
     # C Drive Cleanup via CleanMgr.exe
     Invoke-WebRequest cdc.melvinquick.com | Invoke-Expression
+}
+
+if ($recycle_bin_cleanup_enabled.ToLower() -eq "y") {
+    # C Drive Cleanup via CleanMgr.exe
+    Invoke-WebRequest rbc.melvinquick.com | Invoke-Expression
 }
 
 Write-Host("`nScript has finished cleaning. View the above output to see how much space you saved in each section!") -ForegroundColor Cyan
