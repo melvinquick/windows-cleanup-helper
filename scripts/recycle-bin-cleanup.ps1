@@ -1,5 +1,5 @@
-Write-Host("`nC DRIVE CLEANUP") -ForegroundColor Green
-Write-Host("---------------")
+Write-Host("`nRECYCLE BIN CLEANUP") -ForegroundColor Green
+Write-Host("-------------------")
 
 $path = 'C'
 $path_size_b_original = Get-Volume -DriveLetter $path | Select-Object @{n = "SizeRemaining"; e = { [math]::Round(($_.SizeRemaining / 1), 2) } } | Select-Object -ExpandProperty SizeRemaining
