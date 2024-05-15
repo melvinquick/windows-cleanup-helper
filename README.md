@@ -43,6 +43,12 @@ Downloads Folder Cleanup
 IWR dfc.melvinquick.com | IEX
 ```
 
+Recycle Bin Cleanup
+
+```
+IWR rbc.melvinquick.com | IEX
+```
+
 Screenshot Folder Cleanup
 
 ```
