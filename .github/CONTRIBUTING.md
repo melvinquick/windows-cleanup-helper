@@ -28,4 +28,4 @@
 
 App made with :heart:,
 
-The Windows Setup Script Team
+The Windows Cleanup Helper Team
