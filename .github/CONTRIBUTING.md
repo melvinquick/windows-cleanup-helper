@@ -1,4 +1,4 @@
-## How to contribute to the Windows Setup Script
+## How to contribute to the Windows Cleanup Helper
 
 #### Did you find a bug?
 
