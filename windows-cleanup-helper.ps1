@@ -13,37 +13,37 @@ $recycle_bin_cleanup_enabled = Read-Host("Recycle Bin Cleanup")
 
 if ($downloads_folder_cleanup_enabled.ToLower() -eq "y") {
     # $HOME\Pictures\Screenshot folder cleanup
-    Invoke-WebRequest dfc.melvinquick.com | Invoke-Expression
+    Invoke-WebRequest "https://raw.githubusercontent.com/melvinquick/windows-cleanup-helper/main/driver-scripts/downloads-folder-cleanup.ps1" | Invoke-Expression
 }
 
 if ($screenshot_folder_cleanup_enabled.ToLower() -eq "y") {
     # $HOME\Pictures\Screenshot folder cleanup
-    Invoke-WebRequest sfc.melvinquick.com | Invoke-Expression
+    Invoke-WebRequest "https://raw.githubusercontent.com/melvinquick/windows-cleanup-helper/main/driver-scripts/screenshot-folder-cleanup.ps1" | Invoke-Expression
 }
 
 if ($software_distribution_folder_reset_enabled.ToLower() -eq "y") {
     # C:\Windows\SoftwareDistribution folder reset
-    Invoke-WebRequest sdr.melvinquick.com | Invoke-Expression
+    Invoke-WebRequest "https://raw.githubusercontent.com/melvinquick/windows-cleanup-helper/main/driver-scripts/software-distribution-reset.ps1" | Invoke-Expression
 }
 
 if ($temp_folder_cleanup_enabled.ToLower() -eq "y") {
     # C:\Windows\Temp folder cleanup
-    Invoke-WebRequest tfc.melvinquick.com | Invoke-Expression
+    Invoke-WebRequest "https://raw.githubusercontent.com/melvinquick/windows-cleanup-helper/main/driver-scripts/temp-folder-cleanup.ps1" | Invoke-Expression
 }
 
 if ($user_temp_folder_cleanup_enabled.ToLower() -eq "y") {
     # $HOME\AppData\Local\Temp folder cleanup
-    Invoke-WebRequest utfc.melvinquick.com | Invoke-Expression
+    Invoke-WebRequest "https://raw.githubusercontent.com/melvinquick/windows-cleanup-helper/main/driver-scripts/user-temp-folder-cleanup.ps1" | Invoke-Expression
 }
 
 if ($c_drive_cleanup_enabled.ToLower() -eq "y") {
     # C Drive Cleanup via CleanMgr.exe
-    Invoke-WebRequest cdc.melvinquick.com | Invoke-Expression
+    Invoke-WebRequest "https://raw.githubusercontent.com/melvinquick/windows-cleanup-helper/main/driver-scripts/c-drive-cleanup.ps1" | Invoke-Expression
 }
 
 if ($recycle_bin_cleanup_enabled.ToLower() -eq "y") {
-    # C Drive Cleanup via CleanMgr.exe
-    Invoke-WebRequest rbc.melvinquick.com | Invoke-Expression
+    # Recycle Bin Cleanup
+    Invoke-WebRequest "https://raw.githubusercontent.com/melvinquick/windows-cleanup-helper/main/driver-scripts/recycle-bin-cleanup.ps1" | Invoke-Expression
 }
 
 Write-Host("`nScript has finished cleaning. View the above output to see how much space you saved in each section!") -ForegroundColor Cyan
