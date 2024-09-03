@@ -13,7 +13,7 @@ The goal of this script is to create an easy way for anyone to clean up junk fro
 To run, open PowerShell as an admin user and copy/paste the following into it, then hit enter:
 
 ```
-IWR wch.melvinquick.com | IEX
+IWR run.windowscleanuphelper.com | IEX
 ```
 
 **Disclaimer:** This project is currently undergoing a full overhaul. As such, I am not responsible for anything being broken in the project currently, or breaking your current system. As always, PLEASE read the code yourself if you run into problems and open an issue if you can!
